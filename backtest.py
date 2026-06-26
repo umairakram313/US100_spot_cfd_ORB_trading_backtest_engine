@@ -27,16 +27,6 @@ class state(Enum):
     INCOMP_SHORT=16
     TP_SL_NOTSURE=17
 
-class volatility(Enum):
-    HIGH_VOL=0
-    NORMAL_VOL=1
-    LOW_VOL=2
-
-class trend(Enum):
-    CHOPPY_TREND=0
-    NEUTRAL_TREND=1
-    TRENDY_TREND=2
-
 
 class backtester:
     def __init__(self, inst_symbol, starting_date, ending_date, 
