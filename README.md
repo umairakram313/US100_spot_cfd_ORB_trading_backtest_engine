@@ -1,18 +1,16 @@
-# Opening Range Breakout (ORB) Trading Bot
+# Opening Range Breakout (ORB) Backtesting Engine
 
-A Python-based automated trading bot that implements an **Opening Range Breakout (ORB)** strategy for **US100 (Nasdaq)** using the MetaTrader 5 API.
+A Python-based backtesting engine for evaluating an **Opening Range Breakout (ORB)** trading strategy on **US100 (Nasdaq)** using historical market data through the MetaTrader 5 API.
 
-The bot monitors the market during the trading session, identifies breakouts above or below the opening range, and executes trades automatically. Position sizing is calculated based on a fixed dollar risk per trade using the previous day's ATR (Average True Range), ensuring consistent risk management.
+The engine simulates trades based on breakouts above or below the opening range, applies ATR-based stop-loss levels, and tracks trade execution according to predefined risk management rules. It is designed to help test and validate the strategy before live deployment.
 
 ## Features
 
-* Automated trade execution through MetaTrader 5
-* Opening Range Breakout (ORB) strategy
+* Opening Range Breakout (ORB) strategy simulation
 * ATR-based stop-loss calculation
 * Fixed-risk position sizing
-* Maximum trades per session
-* Automatic end-of-session position closing
-* One-position-at-a-time trade management
+* Session-based trade management
+* Performance evaluation using historical data
 
 ## Technologies
 
@@ -23,4 +21,4 @@ The bot monitors the market during the trading session, identifies breakouts abo
 
 ## Disclaimer
 
-This project is intended for educational and research purposes only. Trading financial markets involves substantial risk, and past performance does not guarantee future results.
+This project is intended for educational and research purposes only. Historical performance does not guarantee future trading results.
